@@ -1,4 +1,8 @@
 # Afficionado Coffee Roasters – Sales & Demand Analytics
+## Author
+
+**Pavani Nikam**  
+Data Analyst Intern
 
 ## Project Overview
 
@@ -76,3 +80,10 @@ afficionado-coffee-sales-analytics/
 │
 ├── Research_Report.pdf
 └── README.md
+
+## Author
+
+**Pavani Nikam**  
+Data Analyst Intern | Data Analytics & Sports Analytics
+
+This project was developed as part of the Data Analyst Internship at Unified Mentor.
