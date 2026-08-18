@@ -484,7 +484,7 @@ fig_category = px.bar(
     text_auto=".2s"
 )
 
-st.plotly_chart(fig_category, width="stretch")
+st.plotly_chart(fig_category, width="stretch", key="store_chart")
 
 # ==========================================================
 # TOP 10 PRODUCTS
@@ -514,7 +514,7 @@ fig_products = px.bar(
     text_auto=".2s"
 )
 
-st.plotly_chart(fig_products, width="stretch")
+st.plotly_chart(fig_products, width="stretch", key="store_chart")
 
 # ==========================================================
 # HOURLY REVENUE
@@ -542,7 +542,7 @@ fig_hour = px.line(
     }
 )
 
-st.plotly_chart(fig_hour, width="stretch")
+st.plotly_chart(fig_hour, width="stretch", key="store_chart")
 
 # ==========================================================
 # HOURLY DEMAND
@@ -570,7 +570,7 @@ fig_demand = px.bar(
     text_auto=True
 )
 
-st.plotly_chart(fig_demand, width="stretch")
+st.plotly_chart(fig_demand, width="stretch", key="store_chart")
 # ==========================================================
 # DOWNLOAD FILTERED DATA
 # ==========================================================
