@@ -379,7 +379,7 @@ fig_metric = px.bar(
     text_auto=".2s"
 )
 
-st.plotly_chart(fig_metric, width="stretch")
+st.plotly_chart(fig_metric, width="stretch", key="metric_chart")
 # ==========================================================
 # DYNAMIC KPI CALCULATIONS
 # ==========================================================
@@ -457,7 +457,7 @@ fig_store = px.bar(
     text_auto=".2s"
 )
 
-st.plotly_chart(fig_store, width="stretch")
+st.plotly_chart(fig_store, width="stretch", key="store_chart")
 # ==========================================================
 # REVENUE BY PRODUCT CATEGORY
 # ==========================================================
@@ -484,7 +484,7 @@ fig_category = px.bar(
     text_auto=".2s"
 )
 
-st.plotly_chart(fig_category, width="stretch", key="store_chart")
+st.plotly_chart(fig_category, width="stretch", key="category_chart")
 
 # ==========================================================
 # TOP 10 PRODUCTS
@@ -514,7 +514,7 @@ fig_products = px.bar(
     text_auto=".2s"
 )
 
-st.plotly_chart(fig_products, width="stretch", key="store_chart")
+st.plotly_chart(fig_products, width="stretch", key="products_chart")
 
 # ==========================================================
 # HOURLY REVENUE
@@ -542,7 +542,7 @@ fig_hour = px.line(
     }
 )
 
-st.plotly_chart(fig_hour, width="stretch", key="store_chart")
+st.plotly_chart(fig_hour, width="stretch", key="hour_chart")
 
 # ==========================================================
 # HOURLY DEMAND
@@ -570,7 +570,7 @@ fig_demand = px.bar(
     text_auto=True
 )
 
-st.plotly_chart(fig_demand, width="stretch", key="store_chart")
+st.plotly_chart(fig_demand, width="stretch", key="demand_chart")
 # ==========================================================
 # DOWNLOAD FILTERED DATA
 # ==========================================================
