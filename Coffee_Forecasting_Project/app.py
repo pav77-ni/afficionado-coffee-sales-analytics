@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path 
 
 # --------------------------------------------------
 # PAGE CONFIGURATION
@@ -34,7 +35,9 @@ staff scheduling and demand management.
 # LOAD DATA
 # --------------------------------------------------
 
-df = pd.read_csv("data/Coffee_Feature_Engineered.csv")
+#df = pd.read_csv("data/Coffee_Feature_Engineered.csv")
+BASE_DIR = Path(__file__).resolve().parent
+df = pd.read_csv(BASE_DIR / "data" / "Coffee_Feature_Engineered.csv")
 
 # Convert time
 df["transaction_time"] = pd.to_datetime(
